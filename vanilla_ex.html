@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h3>신지원 좋아요</h3><p id="like">👍</p> <span>0</span>
+</body>
+<script>
+    let counter = 0;
+    const like = document.getElementById("like");
+    const span = document.querySelector("span");
+    function handleClick(){
+        counter = counter +=1;
+        span.innerText= counter;
+    }
+    like.addEventListener("click",handleClick)
+</script>
+</html>
